@@ -2,8 +2,8 @@
 secret_file = secret.txt
 debug = false
 ;Set the paths where data will be stored at
-static_root = /path/to/static
-media_root = /path/to/media
+static_root = /data-static
+media_root = /data/media
 
 ;Advanced options, only uncomment if you know what you're doing:
 ;static_url = /static/
@@ -13,11 +13,11 @@ media_root = /path/to/media
 ;redis_uri = redis://localhost:6379
 
 [allowed_hosts]
-allowed_host1 = example.com
+allowed_host1 = localhost
 
 [database]
 engine = django.db.backends.sqlite3
-name = db.sqlite3
+name = /data/db.sqlite3
 
 [database-options]
 ; Add engine-specific options here, such as postgresql parameter key words
